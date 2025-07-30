@@ -1,6 +1,6 @@
 {
   "name": "music",
-  "homepage": "https://Cupo2fleurs.github.io/MusicPlayer/",
+  "homepage":"https://Cupo2fleurs.github.io/MusicPlayer/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "@mantine/carousel": "^8.1.2",

@@ -59,12 +59,12 @@ import {useState,useEffect} from 'react';
  return <div><MantineProvider>
   <BrowserRouter> {/*Liste des chemins vers chaque page du site */}
     <Routes>
-      <Route index element={<Audioplayer album={albums} onAlbumSelect={setSelectedAlbumId}/>}/>
-      <Route path="/MusicPlayer/Audio" element={<Audioplayer currentSongIndex={currentSongIndex} setCurrentSongIndex={setCurrentSongIndex} nextSongIndex={nextSongIndex} songs={filteredSongs}/>}/>
-      <Route path="/MusicPlayer/Playlist" element={<Playlist album={albums} onAlbumSelect={setSelectedAlbumId}/>}/>
-      <Route path="/MusicPlayer/Playlist/Musica/:albumId" element={<ListMusic songs={songs} album={albums} onPlaySong={setCurrentSongIndex}/>}/>
-      <Route path="/MusicPlayer/Playlist/NewAlbum" element={<NewAlbum/>}/>
-      <Route path="/MusicPlayer/Playlist/Musica/NewSong/:albumId" element={<NewSong album={albums}/>}/>
+      <Route index element={<Playlist album={albums} onAlbumSelect={setSelectedAlbumId}/>}/>
+      <Route path="/Audio" element={<Audioplayer currentSongIndex={currentSongIndex} setCurrentSongIndex={setCurrentSongIndex} nextSongIndex={nextSongIndex} songs={filteredSongs}/>}/>
+      <Route path="/Playlist" element={<Playlist album={albums} onAlbumSelect={setSelectedAlbumId}/>}/>
+      <Route path="/Playlist/Musica/:albumId" element={<ListMusic songs={songs} album={albums} onPlaySong={setCurrentSongIndex}/>}/>
+      <Route path="/Playlist/NewAlbum" element={<NewAlbum/>}/>
+      <Route path="/Playlist/Musica/NewSong/:albumId" element={<NewSong album={albums}/>}/>
     </Routes>
   </BrowserRouter>
   </MantineProvider>

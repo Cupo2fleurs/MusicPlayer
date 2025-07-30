@@ -147,7 +147,7 @@ function ListMusic({songs = [], album = [], onPlaySong }) {
                         ))
                         
                     )}
-                    <Link to={`/MusicPlayer/Playlist/Musica/NewSong/${albumId}`} style={{ textDecoration: 'none' }}>  {/*Redirige vers NewSong */}
+                    <Link to={`/Playlist/Musica/NewSong/${albumId}`} style={{ textDecoration: 'none' }}>  {/*Redirige vers NewSong */}
                                     <div className="add-song">
                                     <div className="add-icon">+</div>
                                         <Text fw={700} size="md" c="white" align="center">

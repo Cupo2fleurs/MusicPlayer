@@ -13,10 +13,10 @@ const Header = () => {
             <nav className="navbar">
             <img src="/image/logo/MyLogo.png" alt="test logo" id="MyLogo"/>
                 <Container className="navigation" bg="var(--mantine-color-yellow-light)">
-                    <Link to="/MusicPlayer/Playlist">
+                    <Link to="/Playlist">
                         <Button variant="subtle" color="white" size="md" radius="md" className='button_navigation'>Playlists</Button>
                     </Link>
-                    <Link to="/MusicPlayer/Audio">
+                    <Link to="/Audio">
                         <Button variant="subtle" color="white" size="md" radius="md">Ecouter</Button>
                     </Link>
                         <Button variant="subtle" color="white" size="md" radius="md" onClick={()=> navigate(-1)}>Retour</Button>

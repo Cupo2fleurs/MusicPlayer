@@ -51,7 +51,7 @@ function Playlist(props) {
                                 <>
                                 {albums.map((album, idx) => (
                                     <div className='album' key={album.id || idx} >
-                                        <Link to={`/MusicPlayer/Playlist/Musica/${album.id}`}>
+                                        <Link to={`/Playlist/Musica/${album.id}`}>
                                             <img className='album_img' src={album.img_src} alt={album.title} style={{ cursor: "pointer" }} onClick={() => handleAlbumClick(album.id)} />
                                         </Link> 
                                             <Button className="play-button" radius="xl" color="yellow"  onClick={() => {handleAlbumClick(album.id); navigate("/Audio");}} >
@@ -76,7 +76,7 @@ function Playlist(props) {
     
                                 </>
                             )}
-                            <Link to={"/MusicPlayer/Playlist/NewAlbum"} style={{ textDecoration: 'none' }}>
+                            <Link to={"/Playlist/NewAlbum"} style={{ textDecoration: 'none' }}>
                                     <div className="album add-album">
                                     <div className="add-icon">+</div>
                                     <Text fw={700} size="md" c="white" align="center">
