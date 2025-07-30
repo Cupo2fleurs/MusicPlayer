@@ -1,15 +1,14 @@
 
 
 
-Tester de récupérer les infos sur DBV 
-Faire une page pour avoir les stats sur le nombre de fois ou tu as écouter un son album etc
-Refaire le style du site il est super moche au moin le Header parceque la il pu du cu
+ 
+
+
 
 Bug:
-
+Le bouton play jaune ne prends pas la musique ou l'album ( revoir)
 Faire en sorte que le site s'actualise quand on ajoute un album ou un song
-delete les fichier pas utilisé
-Comprendre comment fonctionne la suppression data.Albums = append(data.Albums[:index], data.Albums[index+1:]...)
+
 
 
 FAIT:
@@ -18,47 +17,7 @@ Faire le CSS et le drag and drop pour la creation d'albums
 voir pour l'ajout de son et playlist si il est possible de faire une case de la grid avec un plus pour ajouter une façon plus belle
 Faire un bouton retour pour chaque page dans le headers
 Faire les commentaires sur le code pour mieux comprendre 
+delete les fichier pas utilisé
 
 
-
-/* // Exemple de route en Go pour DBV.PA
-func getStockData(w http.ResponseWriter, r *http.Request) {
-    apiKey := "YOUR_API_KEY"
-    symbol := "DBV.PA"
-    url := fmt.Sprintf("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=%s&apikey=%s", symbol, apiKey)
-
-    resp, err := http.Get(url)
-    if err != nil {
-        http.Error(w, "Erreur API", http.StatusInternalServerError)
-        return
-    }
-    defer resp.Body.Close()
-
-    body, _ := io.ReadAll(resp.Body)
-    w.Header().Set("Content-Type", "application/json")
-    w.Write(body)
-}
-*/ A étudier pour DBV
-Pour React
-
-useEffect(() => {
-  fetch("/api/stock/DBV.PA")
-    .then(res => res.json())
-    .then(data => console.log(data));
-}, []);
-
-Meilleure option : Alpha Vantage (ou EODHistoricalData)
-Pourquoi ?
-
-    📡 API REST simple → facile à interroger avec net/http en Go
-
-    ⚙️ Parfait pour un backend Golang : tu fais l’appel API depuis Go et exposes une route /api/stock/DBV.PA à ton frontend React.
-
-    🔐 Clé API = sécurité + traçabilité
-
-    📉 Données disponibles :
-
-        Cours actuel, historique, indicateurs techniques, etc.
-
-    💸 Plan gratuit raisonnable pour un usage perso ou MVP
 
