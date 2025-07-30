@@ -4,7 +4,6 @@ import {MantineProvider,SimpleGrid,Text,Button,ActionIcon,Menu} from '@mantine/c
 import Header from "./Header";
 import { FaPlay,FaTrashAlt } from "react-icons/fa";
 import { Link,useNavigate } from "react-router-dom";
-import {useEffect} from 'react';
 
 
 //Playlist est la liste des albums
