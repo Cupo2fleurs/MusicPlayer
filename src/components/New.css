@@ -1,0 +1,34 @@
+/* New song CSS */
+
+.container-newsong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+    height: 30vw;
+}
+
+.text-form1{
+    margin: 10px;
+    width: 400px;
+}
+
+.text-form2{
+    margin: 30px;
+    width: 800px;
+}
+
+.Drop-image{
+    width: 800px;
+    margin: 30px;
+    text-align: center;
+}
+
+.new-title{
+    text-align: center;
+    background-color: #242424;
+    padding: 40px;
+    color: white;
+    margin: 0;
+}
+
