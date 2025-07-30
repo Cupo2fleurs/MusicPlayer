@@ -107,7 +107,7 @@ function NewSong({ album = [] }) {
         setAudioFile(null);
         setImgSrc("");
         setSrc("");
-        navigate(`/Playlist/Musica/${albumId}`);
+        navigate(`/MusicPlayer/Playlist/Musica/${albumId}`);
       } else {
         const errorData = await res.json();
         alert(`Erreur lors de l'ajout: ${errorData.error}`);
