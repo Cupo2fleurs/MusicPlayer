@@ -36,7 +36,7 @@ function ListMusic({songs = [], album = [], onPlaySong }) {
         alert(error.message);
     }
 }
-//Permet d'ajouter un song d'un album vers un
+//Permet d'ajouter un song d'un album vers un autre
     const handleAdd = async (song,albumAddId) => {
         //Créer une copie du song 
         const songAdd = {
